@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/overview.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+
+    <title>Overview</title>
+    <script defer src="js/overview.js"></script>
+</head>
+
+<body>
+
+    <div class="container-fluid med_aid">
+        <div class="row main">
+            <!--- left div--->
+            <div class="col-md-6 col-sm-3 col-lg-5 dash_options">
+                <h3 class=".">Medic<span class="aid">Aid</span></h3>
+                <div class="profile">
+                    <img src="img/single.jpg" alt="single" class="img-fluid">
+                    <div class="details ">
+                        <h5>Adeeko Emmanuel</h5>
+                        <p>Administrator</p>
+                    </div>
+                </div>
+                <div class="selections">
+                    <div><a href=""><i class="fas fa-th-large fa-fw"></i><span class="aid">&nbsp;Dashboard</span></a>
+                    </div>
+                    <div><a href=""><i class="fas fa-users fa-fw"></i><span class="aid">&nbsp;Sponsors</span></a></div>
+                    <div><a href=""><i class="fas fa-chart-bar fa-fw"></i><span class="aid">&nbsp;Medical
+                                Cases</span></a></div>
+                    <div><a href=""><i class="fas fa-users fa-fw"></i><span class="aid">&nbsp;Patients</span></a></div>
+                    <div><a href=""><i class="fas fa-user fa-fw"></i><span class="aid">&nbsp;Account</span></a></div>
+                </div>
+
+                <div class="learn_more">
+                    <img src="img/Rectangle 32.png" alt="trio" class="img-fluid">
+                    <button type="button" class="btn btn-primary">Learn more
+                        about covid-19</button>
+                </div>
+
+                <div class="switch">
+                    <div class="form-check form-switch ">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                        <label class="form-check-label" for="flexSwitchCheckChecked">Switch to Dark Mode</label>
+                    </div>
+                </div>
+            </div>
+            <!--- right div--->
+            <div class="col-md-6 col-sm-9 col-lg-7 dash_main">
+                <div class="input-group mt-1">
+                    <div class="form-outline">
+                        <input type="search" id="form1" class="form-control" placeholder="Search Dashboard" />
+                        <label class="form-label" for="form1"></label>
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <i class="fas fa-cog"></i>
+                    <i class="far fa-bell"></i>
+                </div>
+                <div class="container-fluid medical">
+                    <h2 class="mt-auto"> Dashboard</h2>
+                    <div>Dashboard<span> > Overview </span></div>
+
+                </div>
+                <div class="registeredNumber">
+                    <div class="sponsorsNumber">
+                        <div class="imageIcon">
+                            <img src="img/icons/gift.png" alt="" srcset="">
+                        </div>
+                        <div class="numberSponsors">
+                            <small id="pop_value">120k</small>
+                            <small>sponsors</small>
+                        </div>
+                    </div>
+                    <div class="patientsNumber">
+                        <div class="imageIcon">
+                            <img src="img/icons/male-patient.png" alt="" srcset="">
+                        </div>
+                        <div class="numberSponsors">
+                            <small id="pop_value">3.2M</small>
+                            <small>Patients</small>
+                        </div>
+                    </div>
+                    <div class="medCases">
+                        <div class="imageIcon">
+                            <img src="img/icons/female-patient.png" alt="" srcset="">
+                        </div>
+                        <div class="numberSponsors">
+                            <small id="pop_value">4M</small>
+                            <small>Medical Cases</small>
+                        </div>
+                    </div>
+                    <div class="Reports">
+                        <div class="imageIcon">
+                            <img src="img/icons/female-patient.png" alt="" srcset="">
+                        </div>
+                        <div class="numberSponsors">
+                            <small id="pop_value">3M</small>
+                            <small>Reports</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="analytics_container">
+                    <div class="analytics_overview">
+                        <div class="title" style="font-weight: bold;">Overall Analytics</div>
+                        <div class="analysis">
+                            <div class="dougnut_overview">
+                                <div id="chartContainer" style="height: 150px; width: 100%; ">
+                                </div>
+                                <div id="details">
+                                    <div id="dt">
+                                        <div class="squareBlue" style="background-color: #0081FF;"></div>
+                                        <small>Sponsors</small>
+                                    </div>
+                                    <div id="dt">
+                                        <div class="squareBlue" style="background-color: #007BFF;"></div>
+                                        <small>Patients</small>
+                                    </div>
+                                    <div id="dt">
+                                        <div class="squareBlue" style="background-color: #0062C3;"></div>
+                                        <small>Medical cases</small>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="multipleBarChartOverview" id="columnchart_material">
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <aside class="history">
+                        <div class="notify">
+                            <div class="plain_text">
+                                While you left...
+                            </div>
+                            <div class="alert_icon">
+                                <i class="far fa-bell"></i>
+                            </div>
+                        </div>
+                        <div class="messages">
+                            <div id="message1">
+                                <div class="squareBlue"></div>
+                                <small>130000 registered on the platform</small>
+                            </div>
+                            <div id="message2">
+                                <div class="squareBlue"></div>
+                                <small>3000 cases got sponsorship</small>
+                            </div>
+                            <div id="message3">
+                                <div class="squareBlue"></div>
+                                <small>130,000 registered on the platform</small>
+                            </div>
+                        </div>
+
+                    </aside>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+</body>
+
+
+
+</html>
